@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Request Proposal</title>
+
+<link rel="stylesheet" href="css/proposal.css">
+
+<!-- Font Awesome -->
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<div class="contact-wrapper">
+
+  <!-- LEFT -->
+  <div class="contact-info">
+
+    <!-- BACK BUTTON (NO INLINE JS) -->
+    <button class="back-btn" id="backBtn">
+      <i class="fa-solid fa-arrow-left"></i> Back
+    </button>
+
+    <h1>Get in Touch</h1>
+    <p class="subtitle">
+      Looking for a VAPT audit, corporate training, or a keynote speaker?
+    </p>
+
+    <div class="info-item">
+      <i class="fa-solid fa-envelope"></i>
+      <div>
+        <h4>Email</h4>
+        <a href="mailto:contact@ankitrai.in">contact@ankitrai.in</a>
+        <span>Typical response time: 24 hours</span>
+      </div>
+    </div>
+
+    <div class="info-item">
+      <i class="fa-solid fa-location-dot"></i>
+      <div>
+        <h4>Location</h4>
+        <span>India (Serving Globally)</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- RIGHT FORM -->
+  <div class="contact-form">
+    <h1>Request Proposal</h1>
+
+    <form id="proposalForm">
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+
+      <select required>
+        <option value="">Select a Topic</option>
+        <option>VAPT / Audit</option>
+        <option>Corporate Training</option>
+        <option>Keynote Speaking</option>
+        <option>Other</option>
+        
+      </select>
+
+      <textarea placeholder="How can I help you?" required></textarea>
+
+      <button type="submit">
+        Send Message <i class="fa-solid fa-paper-plane"></i>
+      </button>
+    </form>
+  </div>
+
+</div>
+
+<script src="js/proposal.js"></script>
+</body>
+</html>

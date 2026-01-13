@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Ankit Rai | Cyber Security Expert</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/mouse.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/quiz.css">
+      
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="header">
+    <div class="logo">
+        <img src="logo.png" alt="Logo">
+    </div>
+
+    <nav class="nav" id="navMenu">
+       <a href="index.html">Home</a>
+       <a href="about.html">About</a>
+        <a href="service.html">Services</a>
+        <a href="project.html">Projects</a>
+        <a href="startlearning.html">Start Learning</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="talk-btn">Let’s Talk</a>
+     </nav>
+  <div class="menu-icon" onclick="toggleMenu()">☰</div>
+</header>
+
+
+
+<!-- ================= HERO SECTION ================= -->
+<section class="hero">
+    <div class="hero-left">
+        <h1>Hello, I'm <span>Ankit Rai</span></h1>
+        <h3>Cyber Security Expert | Founder, Codevirus Security</h3>
+
+        <p>
+            An authority in cybersecurity with extensive experience training government bodies,
+            banks, and corporations. Specialized in VAPT, Threat Intelligence, and Secure
+            Infrastructure Consulting.
+        </p>
+
+        <button class="cta-btn">Book Consultation</button>
+        <p class="location">📍 India (Serving Globally)</p>
+    </div>
+
+   <!-- RIGHT SIDE -->
+    <div class="hero-right">
+        <div class="profile-frame">
+            <img src="profile.jpg" alt="Ankit Rai">
+
+            <div class="profile-label">
+                <h4>Ankit Rai</h4>
+                <span>Codevirus Security</span>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- ================= HERO IMAGE SLIDER ================= -->
+<section class="hero-slider-section">
+  <div class="hero-slider">
+    <img src="images/slider1.png" class="hero-slide active">
+    <img src="images/slider2.png" class="hero-slide">
+    <img src="images/slider3.png" class="hero-slide">
+
+    <button class="hero-slider-btn prev" onclick="heroPrev()">❮</button>
+    <button class="hero-slider-btn next" onclick="heroNext()">❯</button>
+  </div>
+</section>
+
+
+<!-- ================= CARD WITH HOVER EFFECT ================= -->
+<section class="card-section">
+    <h2 class="section-title">Our Expertise</h2>
+
+    <div class="card-container">
+        <div class="hover-card">
+            <h3>VAPT</h3>
+            <p>Vulnerability Assessment & Penetration Testing for secure systems.</p>
+        </div>
+
+        <div class="hover-card">
+            <h3>Threat Intelligence</h3>
+            <p>Real-time cyber threat monitoring and intelligence solutions.</p>
+        </div>
+
+        <div class="hover-card">
+            <h3>Cyber Training</h3>
+            <p>Industry-focused cybersecurity training and certifications.</p>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- ================= QUIZ SECTION ================= -->
+<section class="quiz-section">
+  <div class="quiz-box quiz-card">
+    <h2 class="quiz-title">Cyber Security Quick Quiz</h2>
+    <p class="quiz-progress" id="progress"></p>
+    
+
+    <h3 id="question"></h3>
+
+    <div class="quiz-options">
+      <button class="quiz-option" onclick="selectOption(0)"></button>
+      <button class="quiz-option" onclick="selectOption(1)"></button>
+      <button class="quiz-option" onclick="selectOption(2)"></button>
+      <button class="quiz-option" onclick="selectOption(3)"></button>
+    </div>
+
+    <button class="quiz-next-btn" id="nextBtn" onclick="nextQuestion()">Next</button>
+  </div>
+</section>
+
+
+<!-- ================= MOUSE HOVER CARD SECTION ================= -->
+<section class="mouse-card-section">
+    <h2 class="section-title">Experience Timeline</h2>
+
+    <div class="mouse-card-container">
+        <div class="mouse-card">
+            <h3>Founder</h3>
+            <h4>Codevirus Security</h4>
+             <p>Leading a team of security researchers and consultants helping global clients secure their digital assets.</p>
+        </div>
+
+        <div class="mouse-card">
+            <h3>Trainer & Consultant</h3>
+            <h4>Government & Banking Sector</h4>
+             <p>Delivered specialized training for ITBP, Union Bank, EXIM Bank, and various Police departments.</p>
+        </div>
+
+        <div class="mouse-card">
+            <h3>Keynote Speaker</h3>
+            <h4>Universities (IIT Kanpur, NIT Patna)</h4>
+            <p>Addressed students and faculty on the future of cybersecurity and ethical hacking.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+
+  <div class="footer-top">
+
+    <!-- LEFT : BRAND -->
+    <div class="footer-brand">
+      <img src="logo.png" alt="Logo" class="footer-logo-img">
+      <p>
+        Founder of Codevirus Security. Helping organizations secure systems,
+        data, and people through expert consulting and training.
+      </p>
+
+      <div class="footer-social-icons">
+        <a href="#">💼</a>
+        <a href="#">🐦</a>
+        <a href="#">📘</a>
+      </div>
+    </div>
+
+    <!-- MIDDLE : EXPERTISE -->
+    <div class="footer-column">
+      <h4>Expertise</h4>
+      <ul>
+        <li><a href="service.html">VAPT Services</a></li>
+        <li><a href="service.html">Corporate Training</a></li>
+        <li><a href="service.html">Dark Web Intel</a></li>
+        <li><a href="service.html">Consulting</a></li>
+      </ul>
+    </div>
+
+    <!-- RIGHT : LEGAL -->
+    <div class="footer-column">
+      <h4>Legal & Links</h4>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Media Kit</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+
+  <!-- BOTTOM -->
+  <div class="footer-bottom">
+    © 2025 Ankit Rai. All rights reserved.
+  </div>
+  <!-- Scroll to Top Button (Footer) -->
+<div class="footer-scroll-top">
+  <button onclick="scrollToTop()">⬆ Back to Top</button>
+</div>
+
+
+</footer>
+
+
+<script src="js/header.js"></script>
+<script src="js/script.js"></script>
+<script src="js/mouse.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/quiz.js"></script>
+
+<link rel="stylesheet" href="css/assistant.css">
+<script src="js/assistant.js"></script>
+
+
+</body>
+</html>

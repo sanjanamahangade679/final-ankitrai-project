@@ -1,0 +1,120 @@
+/* ================= HEADER ================= */
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #020617;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 24px;
+  z-index: 1000;
+  transition: all 0.4s ease;
+}
+
+/* Scroll effect */
+.header.scrolled {
+  background: #050814;
+  box-shadow: 0 6px 25px rgba(46, 236, 240, 0.3);
+}
+
+/* ================= LOGO ================= */
+
+.logo img {
+  height: 42px;
+  cursor: pointer;
+}
+
+/* ================= NAVIGATION ================= */
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+/* Underline animation */
+.nav a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, #2EECF0, #00ffcc);
+  left: 0;
+  bottom: -6px;
+  transition: width 0.4s ease;
+}
+
+.nav a:hover::after,
+.nav a.active::after {
+  width: 100%;
+}
+
+.nav a:hover,
+.nav a.active {
+  color: #2EECF0;
+}
+
+/* ================= LET'S TALK BUTTON ================= */
+
+.talk-btn {
+  padding: 8px 18px;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #2EECF0, #00ffcc);
+  color: #000;
+  font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.talk-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #2EECF0;
+}
+
+/* ================= MENU ICON ================= */
+
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* ================= MOBILE HEADER ================= */
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #050814;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    padding: 22px 0;
+    display: none;
+  }
+
+  .nav a {
+    font-size: 16px;
+  }
+
+  /* Active state */
+  .nav.show {
+    display: flex;
+  }
+}

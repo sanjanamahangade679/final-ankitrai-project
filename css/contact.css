@@ -1,0 +1,129 @@
+contact.css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #020617, #000);
+  color: #e5e7eb;
+}
+
+.contact-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+/* LEFT SECTION */
+.contact-info h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #94a3b8;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.info-item {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.info-item i {
+  color: #00f5ff;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.info-item h4 {
+  margin-bottom: 5px;
+}
+
+.info-item a {
+  color: #00f5ff;
+  text-decoration: none;
+}
+
+.info-item span {
+  display: block;
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+/* BACK BUTTON */
+.back-btn {
+  background: none;
+  border: none;
+  color: #00f5ff;
+  font-size: 15px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+/* FORM */
+.contact-form {
+  background: rgba(2, 6, 23, 0.9);
+  padding: 35px;
+  border-radius: 12px;
+  border: 1px solid #1e293b;
+}
+
+.contact-form label {
+  display: block;
+  margin-top: 18px;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  background: #020617;
+  border: 1px solid #1e293b;
+  border-radius: 6px;
+  color: #e5e7eb;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #00f5ff;
+}
+
+.contact-form button {
+  width: 100%;
+  margin-top: 30px;
+  padding: 14px;
+  background: #00f5ff;
+  border: none;
+  color: #020617;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: #0defff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+}

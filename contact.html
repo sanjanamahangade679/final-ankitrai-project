@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Get in Touch</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+  <link rel="stylesheet" href="css/contact.css" />
+</head>
+<body>
+
+  <div class="contact-wrapper">
+
+    <!-- LEFT SECTION -->
+    <div class="contact-info">
+      <button class="back-btn" id="backBtn" type="button">
+  <i class="fa-solid fa-arrow-left"></i> Back
+</button>
+
+
+      <!-- <button class="back-btn" id="backBtn">
+        <i class="fa-solid fa-arrow-left"></i> Back
+      </button> -->
+
+      <h1>Get in Touch</h1>
+      <p class="subtitle">
+        Looking for cyber security consulting, VAPT audits, or training?
+        Reach out anytime.
+      </p>
+
+      <div class="info-item">
+        <i class="fa-solid fa-envelope"></i>
+        <div>
+          <h4>Email</h4>
+          <a href="mailto:contact@ankitrai.in">contact@ankitrai.in</a>
+          <span>Response within 24 hours</span>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <i class="fa-solid fa-location-dot"></i>
+        <div>
+          <h4>Location</h4>
+          <span>India (Serving Globally)</span>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <i class="fa-brands fa-linkedin"></i>
+        <div>
+          <h4>LinkedIn</h4>
+          <a href="#" target="_blank">View Profile</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- RIGHT FORM -->
+    <div class="contact-form">
+      <!-- <form id="contactForm">
+
+        <label>Name</label>
+        <input type="text" required placeholder="John Doe">
+
+        <label>Email</label>
+        <input type="email" required placeholder="john@example.com">
+
+        <label>Subject</label>
+        <select required>
+          <option value="">Select a topic</option>
+          <option>Cyber Security Consulting</option>
+          <option>VAPT / Audit</option>
+          <option>Training / Workshop</option>
+          <option>Other</option>
+        </select>
+
+        <label>Message</label>
+        <textarea rows="5" required placeholder="Your message..."></textarea>
+
+        <button type="submit">
+          Send Message <i class="fa-solid fa-paper-plane"></i>
+        </button>
+
+      </form> -->
+
+
+      <form id="contactForm" method="POST" action="/php/contact_save.php">
+
+  <label>Name</label>
+  <input type="text" name="name" required placeholder="John Doe">
+
+  <label>Email</label>
+  <input type="email" name="email" required placeholder="john@example.com">
+
+  <label>Subject</label>
+  <select name="subject" required>
+    <option value="">Select a topic</option>
+    <option>Cyber Security Consulting</option>
+    <option>VAPT / Audit</option>
+    <option>Training / Workshop</option>
+    <option>Other</option>
+  </select>
+
+  <label>Message</label>
+  <textarea name="message" rows="5" required placeholder="Your message..."></textarea>
+
+  <button type="submit">
+    Send Message <i class="fa-solid fa-paper-plane"></i>
+  </button>
+
+</form>
+
+
+    </div>
+
+  </div>
+
+  <script src="js/contact.js"></script>
+</body>
+</html>

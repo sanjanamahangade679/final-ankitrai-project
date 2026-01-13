@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: linear-gradient(180deg, #020617, #020d1f);
+  color: #e5e7eb;
+}
+
+/* SECTION */
+.services {
+  max-width: 1100px;
+  margin: auto;
+  padding: 120px 20px;
+}
+
+.services h1 {
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #9ca3af;
+  margin-bottom: 60px;
+}
+
+/* CARD */
+.service-card {
+  background: #020617;
+  border: 1px solid #1e293b;
+  border-radius: 16px;
+  padding: 30px;
+  margin-bottom: 30px;
+  transition: 0.3s ease;
+}
+
+.service-card:hover {
+  border-color: #22d3ee;
+  box-shadow: 0 0 30px rgba(34, 211, 238, 0.15);
+}
+
+/* HEADER */
+.service-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service-left {
+  display: flex;
+  gap: 18px;
+}
+
+.icon-box {
+  width: 46px;
+  height: 46px;
+  border: 1px solid #22d3ee;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #22d3ee;
+  font-size: 18px;
+}
+
+.service-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.service-desc {
+  color: #9ca3af;
+  margin-top: 4px;
+}
+
+/* BODY */
+.service-body {
+  display: flex;
+  gap: 80px;
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid #1e293b;
+}
+
+.service-meta h4 {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #9ca3af;
+  margin-bottom: 6px;
+}
+
+.service-meta p {
+  font-size: 14px;
+}
+
+/* BUTTON */
+.btn {
+  background: transparent;
+  border: 1px solid #22d3ee;
+  color: #22d3ee;
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #22d3ee;
+  color: #020617;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .service-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .service-body {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+/* ICON FIX FOR FONT AWESOME */
+.icon-box i {
+  font-size: 18px;
+}
+
+/* SMOOTH APPEAR ANIMATION */
+.service-card {
+  animation: fadeUp 0.6s ease both;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
